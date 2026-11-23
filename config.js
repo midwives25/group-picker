@@ -1,0 +1,3 @@
+// Isi dengan Project URL dan Publishable key dari Supabase.
+window.SUPABASE_URL = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB0eWZhbHlqbGdxcGdra2VneHJpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTU0MTM1MTIsImV4cCI6MjExMDk4OTUxMn0.6cYOsatu_JFsNWBqliDGHD47CqGCa722EdcQeifacCc";
+window.SUPABASE_ANON_KEY = "sb_publishable_m3xx5QaNjtyVhDaydUXnlw_pTqYyrKw";

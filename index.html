@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Group Picker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="top"><div><span class="mark">✿</span><strong>Group Picker</strong></div><span class="tag">pilih kelompok jadi lebih mudah</span></header>
+  <main>
+    <section class="hero"><p class="eyebrow">RUANG KELOMPOK KELAS</p><h1>Temukan kelompokmu.</h1><p>Pilih mata kuliah dan sesi, lalu bergabung dengan kelompok yang tersedia.</p></section>
+    <section class="panel">
+      <label for="course">Mata kuliah</label><select id="course"><option value="">Memuat mata kuliah…</option></select>
+      <label for="session">Sesi / tugas</label><select id="session" disabled><option value="">Pilih mata kuliah dulu</option></select>
+      <div id="groups" class="groups"><p class="muted">Pilih mata kuliah untuk melihat kelompok.</p></div>
+    </section>
+    <section class="panel archive"><h2>Arsip / History</h2><div id="archives">Memuat arsip…</div></section>
+    <section class="panel admin"><h2>Admin</h2><p class="muted">Area pengelola kelompok.</p><button id="admin-toggle" class="secondary">Login admin</button>
+      <div id="admin-box" hidden><label>Email admin</label><input id="admin-email" type="email" autocomplete="username"><label>Password</label><input id="admin-password" type="password" autocomplete="current-password"><button id="login">Login</button><p id="admin-message" class="muted"></p><div id="admin-tools" hidden></div></div>
+    </section>
+  </main>
+  <footer>Dibuat untuk memudahkan pembagian kelompok kelas ♡</footer>
+  <dialog id="join-dialog"><form method="dialog" id="join-form"><h2>Gabung kelompok</h2><p id="join-caption"></p><label for="student-name">Nama lengkap</label><input id="student-name" maxlength="100" required><div class="actions"><button type="button" class="secondary" id="cancel-join">Batal</button><button type="submit">Gabung</button></div><p id="join-message" class="muted"></p></form></dialog>
+</body></html>
